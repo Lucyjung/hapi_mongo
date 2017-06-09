@@ -1,0 +1,28 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "CMMI Template Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "Narut",
+  "license": "ISC",
+  "dependencies": {
+    "good": "^7.2.0",
+    "good-console": "^6.4.0",
+    "good-squeeze": "^5.0.2",
+    "hapi": "^16.4.2",
+    "hapi-auth-basic": "^4.2.0",
+    "hapi-mongoose": "^1.0.1",
+    "mongoose": "^4.10.5",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  }
+}
