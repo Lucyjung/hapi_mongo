@@ -1,0 +1,19 @@
+<link href="css/login-css.css" rel="stylesheet">
+<div class="container">
+	<div class="card card-container">
+		<img id="profile-img" class="profile-img-card" src="images/logo.png" />
+		<p id="profile-name" class="profile-name-card"> Login to Template</p>
+		<form class="form-signin">
+			<input type="UserID" id="inputUserID" class="form-control" placeholder="UserID" required autofocus>
+			<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+			<!--Show invalid password-->
+			<p id="show-invalid-password" ><i class="fa fa-times" aria-hidden="true" ></i> Invalid combination!!</p>
+			<button class="btn btn-lg btn-primary btn-block btn-signin" type="button" id="btn-login" >Login</button>
+			<!--Change password on redmine-->
+			<a href="http://10.164.232.200/redmine/account/lost_password">
+				<i class="fa fa-key" aria-hidden="true"></i>  Forget password
+			</a>
+		</form><!-- /form -->
+	</div><!-- /card-container -->
+</div><!-- /container -->
+<script type="text/javascript" src="js/login.script.js"></script>

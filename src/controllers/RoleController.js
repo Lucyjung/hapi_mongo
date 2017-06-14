@@ -17,7 +17,14 @@ module.exports = {
     });
   },
   update: function (request, reply) {
-    RoleModel.findOneAndUpdate({_id: request.params.id}, request.payload, function (error, data) {
+
+    // convert string to boolean
+    for (let i in request.payload.permission){
+      request.payload.permission[i] = request.payload.permission[i] == 'true';
+    }
+    
+    RoleModel.update({_id: request.params.id}, request.payload, function (error, data) {
+      console.log(data);
       if (error) {
         reply({
             statusCode: 503,

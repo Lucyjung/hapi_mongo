@@ -1,0 +1,175 @@
+<link href="css/admin-css.css" rel="stylesheet">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <!--************ left menu ************ -->
+                <div class="col-md-3 col-xs-3 control-fix">
+                        <a href="#/admin" class="btn btn-default btn-lg btn-block" role="button" >Member</a>
+                         <a href="#/permission" class="btn btn-default btn-lg btn-block meactive-past" role="button" >Permission</a>
+                         <a href="#/permission-setting" class="btn btn-default btn-lg btn-block meactive disabled" role="button" disabled>Permission Setting</a>
+                </div>
+                <div class="col-md-3 col-xs-3"></div>
+                <!--************ left menu ************ -->
+                <div class="col-md-9 col-xs-9">
+
+                <!--start page-->
+                <div class="col-sm-12">
+                <!--Role Name start-->
+                <div class="row">
+                    <div class="page-header-own">
+                        <h2>
+                            Permission Setting
+                        </h2>
+			        </div>
+                    <div class="form-inline">
+                        <div class="form-group">
+                        <label for="InputRole" style="margin-right:15px;"><h4>Role name : </h4></label>
+                        <input type="hidden" id="permission-setting-role-id">
+                        <input type="text" class="form-control" id="InputRole" placeholder="Example : PM Board" style="width:350px;" name="name">     </div>
+                    </div>
+                </div><!--Role Name end-->
+                <div  id="permission-setting-list">
+                  <!--Project Registration start-->
+                  <div class="row" id="proj_reg">
+                      <label><h4>Project List</h4></label>
+                  </div>
+                      <div class="row">
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_reg1" name="list_view">
+                              <label for="proj_reg1">
+                               View
+                              </label>
+                          </div>
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_reg2" name="list_edit">
+                              <label for="proj_reg2">
+                              <span></span>
+                              Edit
+                              </label>
+                          </div>
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_reg3" name="list_delete">
+                              <label for="proj_reg3">
+                              <span></span>
+                              Delete
+                              </label>
+                          </div>
+                      </div>
+                  <!--Project Registration end-->
+                  <!--Project List start-->
+                  <div class="row" id="proj_list">
+                      <label><h4>Project Registration</h4></label>
+                  </div>
+                      <div class="row">
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_list1" name="reg_view">
+                              <label for="proj_list1">
+                               View
+                              </label>
+                          </div>
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_list2" name="reg_create">
+                              <label for="proj_list2">
+                              <span></span>
+                              Create New project
+                              </label>
+                          </div>
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_list3" name="reg_delete">
+                              <label for="proj_list3">
+                              <span></span>
+                              Delete own project
+                              </label>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_list4" name="reg_approve">
+                              <label for="proj_list4">
+                               Approved new project
+                              </label>
+                          </div>
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_list5" name="reg_edit">
+                              <label for="proj_list5">
+                              <span></span>
+                              Edit own project
+                              </label>
+                          </div>
+                      </div>
+                  <!--Project List end-->
+                  <!--Project RTM start-->
+                  <div class="row" id="proj_rtm">
+                      <label><h4>Project RTM</h4></label>
+                  </div>
+                      <div class="row">
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_rtm1" name="rtm_view">
+                              <label for="proj_rtm1">
+                               View
+                              </label>
+                          </div>
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_rtm2" name="rtm_create">
+                              <label for="proj_rtm2">
+                              <span></span>
+                              Create RTM
+                              </label>
+                          </div>
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_rtm3" name="rtm_fill">
+                              <label for="proj_rtm3">
+                              <span></span>
+                              Fill data own project
+                              </label>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_rtm4" name="rtm_edit">
+                              <label for="proj_rtm4">
+                               Edit own project
+                              </label>
+                          </div>
+                      </div>
+                  <!--Project RTM end-->
+                  <!--Project PPQA start-->
+                  <div class="row" id="proj_ppqa">
+                      <label><h4>Project PPQA</h4></label>
+                  </div>
+                      <div class="row">
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_ppqa1" name="ppqa_view">
+                              <label for="proj_ppqa1">
+                               View
+                              </label>
+                          </div>
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_ppqa2" name="ppqa_edit">
+                              <label for="proj_ppqa2">
+                              <span></span>
+                              Edit
+                              </label>
+                          </div>
+                          <div class="col-sm-4">
+                              <input type="checkbox" id="proj_ppqa3" name="ppqa_create">
+                              <label for="proj_ppqa3">
+                              <span></span>
+                              create
+                              </label>
+                          </div>
+                      </div>
+                  <!--Project PPQA end-->
+                  <div class="row">
+                      <button type="button" class="btn btn-primary" id="btn-save" style="width:200px;" >SAVE</button>
+                  </div>
+                </div> 
+                </div><!--end page-->
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/permission-setting.script.js"></script>

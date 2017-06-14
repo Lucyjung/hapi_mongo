@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Hello {{test}}</title>
+    <!-- include dependent files here... -->
+    {{#each assets.js}}
+    <script src="{{this}}"></script>
+    {{/each}}
+</head>
+<body>
+
+    {{{content}}}
+
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        login('user','1A2b3C4d5E6f', function(status){
+          getUserList('user','1A2b3C4d5E6f',function(status,data){
+            console.log(data);
+          });
+        });
+    });
+});
+</script>
+</body>
+</html>

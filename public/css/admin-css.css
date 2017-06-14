@@ -1,0 +1,105 @@
+.btn.btn-default{
+    color: #000;
+   text-align: justify ;
+    font-size: 16px;
+}
+.btn.btn-default:hover{
+	background: #cce0ff;
+}
+.btn.btn-default:active{
+	background: #4d94ff;
+}
+.btn.btn-default.meactive{
+	background: #4d94ff;
+	color: #fff;
+}
+.btn.btn-default.meactive-past{
+	background: #4d94ff;
+	color: #fff;
+}
+
+.disabled {
+    cursor: no-drop;
+    pointer-events: none;
+}
+
+.control-fix.col-md-3.col-xs-3{
+	position:fixed;
+}
+.page-header-own{
+    border-bottom: 1px solid #cce0ff;
+    margin-bottom: 15px; 
+}
+.table th{
+    background: #b3d1ff;
+}
+.table a{
+    color: black
+}
+.table tr:hover{
+    background:  #e6ffe6;
+}
+.table a{
+    font-size: 16px;
+    text-decoration: underline;
+}
+.table th{
+    width: 25%;
+    height: auto;
+}
+
+.form-inline{
+    margin-top: 20px;
+}
+input[type=checkbox] + label{
+	display: inline-block;
+	margin: 1px;
+}
+
+input[type = checkbox]{
+	display: none;
+}
+
+input[type=checkbox] + label:before{
+	content: "\2714";
+	border: 1.6px solid #000;
+	border-radius: 3.2px;
+	display: inline-block;
+	width: 16px
+	height: 5px;
+	padding-left: 2.8px;
+	padding-right: 4.8px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: auto;
+	vertical-align: bottom;
+	color: transparent;
+	transition: .2s;
+}
+
+input[type=checkbox] + label:active:before{
+	transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before{
+	background-color: 	#99ccff;
+}
+form{
+	margin-right : 20ppx;
+}
+
+.form-group{
+	display: inline-block;
+}
+
+#proj_reg,
+#proj_list,
+#proj_rtm,
+#proj_ppqa{
+    margin-top: 5px;
+}
+
+#btn-save{
+	margin-top: 30px;
+    margin-bottom: 30px;
+}

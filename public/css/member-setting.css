@@ -1,0 +1,94 @@
+#panel-admin {
+	color: #000;
+    text-align: justify;
+}
+#panel-admin .panel-heading{
+	background: #cce0ff;
+}
+
+#panel-admin .panel-heading a{
+	text-decoration:none;
+	color: black;
+}
+
+.control-fix.col-md-3.col-xs-3{
+	position:fixed;
+}
+.form-group input[type=checkbox] + label{
+	display: inline-block;
+	margin: 1px;
+}
+
+.form-group input[type = checkbox]{
+	display: none;
+}
+
+.form-group input[type=checkbox] + label:before{
+	content: "\2714";
+	border: 1.6px solid #000;
+	border-radius: 3.2px;
+	display: inline-block;
+	width: 16px
+	height: 5px;
+	padding-left: 2.8px;
+	padding-right: 4.8px;
+	margin-right: 5px;
+	margin-top: 20px;
+	margin-bottom: auto;
+	vertical-align: bottom;
+	color: transparent;
+	transition: .2s;
+}
+.form-group input[type=checkbox] + label:active:before{
+	transform: scale(0);
+}
+
+.form-group input[type=checkbox]:checked + label:before{
+	background-color: 	#99ccff;
+}
+form{
+	margin-right : 20px;
+}
+
+.form-group{
+	display: block;
+}
+
+#proj_reg{
+	margin-top: 3px;
+}
+
+#proj_list{
+	margin-top: 3px;
+}
+
+#proj_rtm{
+    margin-top: 3px;
+}
+#proj_ppqa{
+    margin-top: 3px;
+}
+
+#btn-save{
+	margin-top: 10px;
+}
+/*member setting*/
+#login_id{
+	padding-right:50px;
+}
+#first_name{
+	padding-right:50px;
+}
+.form{
+	margin-top: 10px;
+}
+#btnMem_save{
+
+	margin-top:40px;
+	margin-right: 20px;
+}
+#title{
+	padding-right: 50px;
+}
+
+

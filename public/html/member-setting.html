@@ -1,0 +1,106 @@
+<link href="css/admin-css.css" rel="stylesheet">
+<link href="css/member-setting.css" rel="stylesheet">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+               <div class="row">
+               <!--************ Start left menu ************ -->
+               <div class="col-md-3 col-xs-3 control-fix">
+                         <a href="#/admin" class="btn btn-default btn-lg btn-block meactive-past" role="button" >Member</a>
+                         <a href="#/member-setting" class="btn btn-default btn-lg btn-block meactive disabled" role="button" disabled>Member Setting</a>
+                         <a href="#/permission" class="btn btn-default btn-lg btn-block" role="button" >Permission</a>
+                </div>
+                <div class="col-md-3 col-xs-3"></div>
+                <!--************ End left menu ************ -->
+                <div class="col-md-9 col-xs-9">
+                        <div class="page-header-own">
+                        <h2>
+                            Permission Setting
+                        </h2>
+			            </div>
+                  <div class="col-md-12 col-xs-12">
+                      <!--Start page-->
+                      <div class="row" style="margin-bottom:-15px; font-size:16px;">
+                        <table class="table" id="member-setting-member-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        User ID
+                                    </th>
+                                    <th>
+                                        First Name
+                                    </th>
+                                    <th>
+                                        Last Name
+                                    </th>
+                                    <th>
+                                        Team
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr  style="border-bottom:1px solid #eee;">
+                                    <td>
+                                            chattraphon0183
+                                    </td>
+                                    <td>
+                                            Chattraphon
+                                    </td>
+                                    <td>
+                                            Pinkaew
+                                    </td>
+                                    <td>
+                                            Info
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                      <div class="row">
+                        <div class="form-group" id="member-setting-rolelist">
+                          <div class="col-md-12">
+                              <input type="checkbox" id="pm_boad">
+                              <label for="pm_boad">
+                                <span></span>
+                                PM Boad
+                              </label>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="checkbox" id="pm_project">
+                              <label for="pm_project">
+                                <span></span>
+                                PM Project
+                              </label>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="checkbox" id="ppqa_manager">
+                              <label for="ppqa_manager">
+                                <span></span>
+                                PPQA Manager
+                              </label>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="checkbox" id="ppqa_member">
+                              <label for="ppqa_member">
+                                <span></span>
+                                PPQA Member
+                              </label>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="checkbox" id="developer">
+                              <label for="developer">
+                                <span></span>
+                                Developer
+                              </label>
+                          </div>
+                      </div>
+                      <button type="button" class="btn btn-primary" id="btnMem_save" style="width:200px;" >SAVE</button>
+                    </div><!--End page-->
+                    </div>
+                   </div>
+                </div>
+         </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/member-setting.script.js"></script>

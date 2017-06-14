@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
     username: String,
-    role: Schema.ObjectId
+    role: Array
 },{
   timestamps: true,
   versionKey: false,
